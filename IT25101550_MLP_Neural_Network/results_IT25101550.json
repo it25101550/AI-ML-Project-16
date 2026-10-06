@@ -1,0 +1,49 @@
+{
+  "member": "Rathnayaka R.M.B.G.T.A.B.R.",
+  "student_id": "IT25101550",
+  "model": "Multi-Layer Perceptron (Neural Network)",
+  "best_variant": "V4 Standard + BMI feature",
+  "best_params": {
+    "alpha": 0.0001,
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "learning_rate_init": 0.01
+  },
+  "cv_f1": 0.7336239346371619,
+  "test": {
+    "Accuracy": 0.78,
+    "Precision": 0.711764705882353,
+    "Recall": 0.75625,
+    "F1": 0.7333333333333333,
+    "ROC_AUC": 0.8456250000000001
+  },
+  "repeated": {
+    "acc_mean": 0.79025,
+    "acc_std": 0.017300650276795976,
+    "f1_mean": 0.7294378763891054,
+    "f1_std": 0.016094891253765637,
+    "acc_min": 0.7625,
+    "acc_max": 0.8125
+  },
+  "train_acc": 0.828125,
+  "n_configs": 18,
+  "n_fits": 107,
+  "preprocessing_f1": {
+    "V1 Median impute, no scaling": 0.6782787057990777,
+    "V2 Median + StandardScaler": 0.7163737024373006,
+    "V3 Median + RobustScaler": 0.7105195865110299,
+    "V4 Standard + BMI feature": 0.733767130912284,
+    "V5 Standard, gender removed": 0.6979095286120512,
+    "V6 Standard + PCA (95% var)": 0.712268046197178
+  },
+  "preprocessing_test_acc": {
+    "V1 Median impute, no scaling": 0.7525,
+    "V2 Median + StandardScaler": 0.7625,
+    "V3 Median + RobustScaler": 0.78,
+    "V4 Standard + BMI feature": 0.7675,
+    "V5 Standard, gender removed": 0.76,
+    "V6 Standard + PCA (95% var)": 0.78
+  }
+}
