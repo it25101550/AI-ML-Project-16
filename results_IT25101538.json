@@ -1,0 +1,45 @@
+{
+  "member": "Marasinghe M.M.B.I.",
+  "student_id": "IT25101538",
+  "model": "Support Vector Machine (RBF)",
+  "best_variant": "V3 Median + RobustScaler",
+  "best_params": {
+    "C": 10,
+    "gamma": 0.01
+  },
+  "cv_f1": 0.7312971128608924,
+  "test": {
+    "Accuracy": 0.7825,
+    "Precision": 0.7703703703703704,
+    "Recall": 0.65,
+    "F1": 0.7050847457627119,
+    "ROC_AUC": 0.8501822916666667
+  },
+  "repeated": {
+    "acc_mean": 0.7969999999999999,
+    "acc_std": 0.013407087677791928,
+    "f1_mean": 0.7323150613513151,
+    "f1_std": 0.019803831022073982,
+    "acc_min": 0.7775,
+    "acc_max": 0.82
+  },
+  "train_acc": 0.80375,
+  "n_configs": 18,
+  "n_fits": 107,
+  "preprocessing_f1": {
+    "V1 Median impute, no scaling": 0.0670840579710145,
+    "V2 Median + StandardScaler": 0.714636028786304,
+    "V3 Median + RobustScaler": 0.721949632966819,
+    "V4 Standard + BMI feature": 0.714264300541379,
+    "V5 Standard, gender removed": 0.6831578669085439,
+    "V6 Standard + PCA (95% var)": 0.714636028786304
+  },
+  "preprocessing_test_acc": {
+    "V1 Median impute, no scaling": 0.6,
+    "V2 Median + StandardScaler": 0.7775,
+    "V3 Median + RobustScaler": 0.78,
+    "V4 Standard + BMI feature": 0.785,
+    "V5 Standard, gender removed": 0.755,
+    "V6 Standard + PCA (95% var)": 0.7775
+  }
+}
