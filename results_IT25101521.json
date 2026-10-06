@@ -1,0 +1,46 @@
+{
+  "member": "Dias L.I.K.",
+  "student_id": "IT25101521",
+  "model": "K-Nearest Neighbours",
+  "best_variant": "V4 Standard + BMI feature",
+  "best_params": {
+    "n_neighbors": 15,
+    "p": 2,
+    "weights": "distance"
+  },
+  "cv_f1": 0.6936336852555509,
+  "test": {
+    "Accuracy": 0.745,
+    "Precision": 0.7164179104477612,
+    "Recall": 0.6,
+    "F1": 0.6530612244897959,
+    "ROC_AUC": 0.807421875
+  },
+  "repeated": {
+    "acc_mean": 0.75525,
+    "acc_std": 0.013576173982385451,
+    "f1_mean": 0.6702515813728702,
+    "f1_std": 0.023534359010974445,
+    "acc_min": 0.7325,
+    "acc_max": 0.775
+  },
+  "train_acc": 1.0,
+  "n_configs": 34,
+  "n_fits": 187,
+  "preprocessing_f1": {
+    "V1 Median impute, no scaling": 0.43681811965517064,
+    "V2 Median + StandardScaler": 0.6660268483060751,
+    "V3 Median + RobustScaler": 0.6618014491939171,
+    "V4 Standard + BMI feature": 0.6715785013623583,
+    "V5 Standard, gender removed": 0.6422807493514433,
+    "V6 Standard + PCA (95% var)": 0.6660268483060751
+  },
+  "preprocessing_test_acc": {
+    "V1 Median impute, no scaling": 0.59,
+    "V2 Median + StandardScaler": 0.7225,
+    "V3 Median + RobustScaler": 0.74,
+    "V4 Standard + BMI feature": 0.74,
+    "V5 Standard, gender removed": 0.7125,
+    "V6 Standard + PCA (95% var)": 0.7225
+  }
+}
