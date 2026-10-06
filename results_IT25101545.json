@@ -1,0 +1,45 @@
+{
+  "member": "Ukwaththa U.K.A.A.N.",
+  "student_id": "IT25101545",
+  "model": "Logistic Regression",
+  "best_variant": "V4 Standard + BMI feature",
+  "best_params": {
+    "C": 1,
+    "penalty": "l1"
+  },
+  "cv_f1": 0.7407345162933587,
+  "test": {
+    "Accuracy": 0.785,
+    "Precision": 0.7720588235294118,
+    "Recall": 0.65625,
+    "F1": 0.7094594594594594,
+    "ROC_AUC": 0.8487500000000001
+  },
+  "repeated": {
+    "acc_mean": 0.7957500000000001,
+    "acc_std": 0.01650946698109906,
+    "f1_mean": 0.7334007809979058,
+    "f1_std": 0.023044080801941504,
+    "acc_min": 0.7675,
+    "acc_max": 0.82
+  },
+  "train_acc": 0.80125,
+  "n_configs": 16,
+  "n_fits": 97,
+  "preprocessing_f1": {
+    "V1 Median impute, no scaling": 0.736756986808685,
+    "V2 Median + StandardScaler": 0.7310497774764133,
+    "V3 Median + RobustScaler": 0.7328015488466981,
+    "V4 Standard + BMI feature": 0.7384184385180564,
+    "V5 Standard, gender removed": 0.707989317456646,
+    "V6 Standard + PCA (95% var)": 0.7310497774764133
+  },
+  "preprocessing_test_acc": {
+    "V1 Median impute, no scaling": 0.7725,
+    "V2 Median + StandardScaler": 0.7725,
+    "V3 Median + RobustScaler": 0.7725,
+    "V4 Standard + BMI feature": 0.7875,
+    "V5 Standard, gender removed": 0.76,
+    "V6 Standard + PCA (95% var)": 0.7725
+  }
+}
