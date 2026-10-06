@@ -1,0 +1,46 @@
+{
+  "member": "Medagama M.S.",
+  "student_id": "IT25101527",
+  "model": "Decision Tree",
+  "best_variant": "V1 Median impute, no scaling",
+  "best_params": {
+    "criterion": "entropy",
+    "max_depth": 5,
+    "min_samples_split": 2
+  },
+  "cv_f1": 0.6660530619479393,
+  "test": {
+    "Accuracy": 0.7025,
+    "Precision": 0.632258064516129,
+    "Recall": 0.6125,
+    "F1": 0.6222222222222222,
+    "ROC_AUC": 0.7472135416666668
+  },
+  "repeated": {
+    "acc_mean": 0.72125,
+    "acc_std": 0.013930631715755025,
+    "f1_mean": 0.6139441630523221,
+    "f1_std": 0.03459275547836882,
+    "acc_min": 0.7075,
+    "acc_max": 0.7575
+  },
+  "train_acc": 0.79125,
+  "n_configs": 46,
+  "n_fits": 247,
+  "preprocessing_f1": {
+    "V1 Median impute, no scaling": 0.6309304024720557,
+    "V2 Median + StandardScaler": 0.6288753642255147,
+    "V3 Median + RobustScaler": 0.6278540142037858,
+    "V4 Standard + BMI feature": 0.6213133212053212,
+    "V5 Standard, gender removed": 0.6219612195978861,
+    "V6 Standard + PCA (95% var)": 0.6034749570315101
+  },
+  "preprocessing_test_acc": {
+    "V1 Median impute, no scaling": 0.665,
+    "V2 Median + StandardScaler": 0.6625,
+    "V3 Median + RobustScaler": 0.67,
+    "V4 Standard + BMI feature": 0.6975,
+    "V5 Standard, gender removed": 0.6525,
+    "V6 Standard + PCA (95% var)": 0.675
+  }
+}
